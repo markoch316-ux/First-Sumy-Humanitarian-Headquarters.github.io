@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна | Перший Сумський гуманітарний штаб</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="scroll-progress"></div>
+
+    <header>
+        <img src="pershij-sumskij-gumanitarnij-shtab-8-1.png" alt="logo" class="header-logo">
+        <div class="header-text-container">
+            <div class="brand-title">
+                <h1>«Перший Сумський гуманітарний штаб»</h1>
+            </div>
+            <nav>
+    <a href="index.html" class="nav-link active">Головна</a>
+    <a href="poslyri.html" class="nav-link">Допомога</a>
+    <a href="volonteru.html" class="nav-link">Волонтери</a>
+    <a href="zvitu.html" class="nav-link">Звітність</a>
+    <a href="donatu.html" class="nav-link">Долучитися</a>
+    <hr class="gallery-divider" >
+</nav>
+        </div>
+        
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2 class="hero-title">Благодійна та волонтерська організація</h2>
+            
+            <div class="quote-block">
+                <p>«Організація, створена небайдужими сумчанами у лютому 2022 року для захисту та допомоги місту. Сьогодні ми — масштабний штаб, який щодня підтримує тих, хто цього найбільше потребує»</p>
+            </div>
+
+            <div class="hero-description">
+                <p>Ми періодично анонсуємо реєстрацію на гуманітарні набори, фінансову допомогу та дитяче харчування. Стежте за нашими оновленнями та записуйтесь на приймання через соціальні мережі.</p>
+            </div>
+
+            <button class="btn" data-bs-toggle="modal" data-bs-target="#helpModal">Дізнатися</button>
+        </section>
+    </main>
+
+    <div class="modal fade" id="helpModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">До уваги!</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="color: #222;">
+                    <p style="text-align: center;"><u><i>Наразі видач немає</i></u></p>
+                    <p class="mb-0" style="text-align: center;">Слідкуйте за інформацією на сайті</p>
+                    <p style="text-align: center;"><strong>Данні оновлюються кожні 12 годин</strong></p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary py-2 px-4 fs-6" data-bs-dismiss="modal" style="background: #ff0000b2; animation:none;">Закрити</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <hr class="gallery-divider" >
+        <div class="row container mx-auto align-items-center">
+            <div class="col-md-4 text-md-start mb-3 mb-md-0">
+                <p class="fw-bold">📍 Локації в Сумах:</p>
+                <p>Гуманітарний центр: вул. Воскресенська, 16</p>
+                <p>Соціальний склад: вул. Ярослава Мудрого, 69</p>
+            </div>
+            <div class="col-md-4 text-center mb-3 mb-md-0">
+                <p class="m-0">© 2026 «БО | БФ»</p>
+                <p class="small text-white-50">Перший Сумський гуманітарний штаб</p>
+                <div class="footer-socials-images">
+                    <a href="https://www.facebook.com/Sumy.Volunteering/?locale=uk_UA" target="_blank" class="img-social-link"> 
+                        <img src="f9b11dc9cf3f213059b53602f67a32de-Photoroom.png" style="width: 60px; height: 60px;" alt="facebook_офіційний"></a> 
+
+                    <a href="https://www.instagram.com/evropa_plus.kg/" target="_blank" class="img-social-link">
+                        <img src="0d79e4d7117b2b6cee29640854249267-Photoroom.png" style="width: 50px; height: 50px;" alt="Instagram_засносниці"></a>
+
+                    <a href="https://t.me/informpsg" target="_blank" class="img-social-link">
+                        <img src="104a49612dd864b7df3cd5fcea64e6d9-Photoroom.png" style="width: 50px; height: 50px;" alt="Telegram"></a>
+                </div>
+            </div>
+            <div class="col-md-4 text-md-end">
+                <p class="fw-bold">🕒 Графік роботи:</p>
+                <p>З 9:00 до 15:00</p>
+                <p>(Понеділок — п'ятниця)</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.onscroll = function() {
+            const windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
+            const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = totalHeight > 0 ? (windowScroll / totalHeight) * 100 : 0;
+            document.querySelector('.scroll-progress').style.width = scrolled + '%';
+        };
+    </script>
+</body>
+</html>
